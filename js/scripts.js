@@ -1,49 +1,49 @@
-$(".telephone_icon").hide(100, function () {
+$("#telephone_icon").hide(100, function () {
   setTimeout(function () {
-    $(".telephone_icon").show(500);
+    $("#telephone_icon").show(500);
   }, 1000);
 });
 
 setTimeout(function () {
-  $(".telephone_icon").addClass("magictime twisterInUp");
+  $("#telephone_icon").addClass("magictime twisterInUp");
 }, 1000);
 
-$(".messenger_icon").hide(100, function () {
+$("#messenger_icon").hide(100, function () {
   setTimeout(function () {
-    $(".messenger_icon").show(500);
+    $("#messenger_icon").show(500);
   }, 1500);
 });
 
 setTimeout(function () {
-  $(".messenger_icon").addClass("magictime twisterInUp");
+  $("#messenger_icon").addClass("magictime twisterInUp");
 }, 1500);
 
-$(".rate_icon").hide(100, function () {
+$("#rate_icon").hide(100, function () {
   setTimeout(function () {
-    $(".rate_icon").show(500);
+    $("#rate_icon").show(500);
   }, 2000);
 });
 
 setTimeout(function () {
-  $(".rate_icon").addClass("magictime twisterInUp");
+  $("#rate_icon").addClass("magictime twisterInUp");
 }, 2000);
 
-$(".messenger_green_icon").hide(100, function () {
+$("#messenger_green_icon").hide(100, function () {
   setTimeout(function () {
-    $(".messenger_green_icon").show(500);
+    $("#messenger_green_icon").show(500);
   }, 2500);
 });
 
 setTimeout(function () {
-  $(".messenger_green_icon").addClass("magictime twisterInDown");
+  $("#messenger_green_icon").addClass("magictime twisterInDown");
 }, 2500);
 
-$(".heart_icon").hide(100, function () {
+$("#heart_icon").hide(100, function () {
   setTimeout(function () {
-    $(".heart_icon").show(500);
+    $("#heart_icon").show(500);
   }, 3000);
 });
 
 setTimeout(function () {
-  $(".heart_icon").addClass("magictime twisterInDown");
+  $("#heart_icon").addClass("magictime twisterInDown");
 }, 3000);

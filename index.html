@@ -11,115 +11,254 @@
   <body>
     <header>
       <div class="container">
-        <div class="logo">
-          <a href="#"><img src="images/logo.svg" alt="logo" /></a>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Article</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Get Started</a></li>
-          </ul>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><img src="./images/logo.svg" alt="logo"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Article</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Get Started</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
 
     <section class="main_banner">
       <div class="container">
-        <article>
-          <h1>Find And Search Your <span>Suitable Doctor’s</span></h1>
-          <p>
-            Join us and take care of yourself and your family with health
-            services that will make you feel confident and safe in your daily
-            life.
-          </p>
+        <div class="row">
+          <div class="col-6 align-self-center">
+            <h1>Search And Find Your <span>Suitable Doctor’s</span></h1>
+            <p>
+              Join us and take care of yourself and your family with health
+              services that <br />
+              will make you feel confident and safe in your daily life.
+            </p>
 
-          <form action="#" method="post">
-            <div class="container">
-              <input type="text" placeholder="Find your doctor" />
-              <select name="city" class="form-select">
-                <option value="value1" selected>New York, USA</option>
-                <option value="value2">Los Angeles, USA</option>
-                <option value="value3">Las Vegas, USA</option>
-              </select>
+            <form>
+              <div class="row m-0 find_doctor_form justify-content-between">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="find_doctor"
+                  placeholder="Find your doctor"
+                />
 
-              <div class="btn_box">
-                <button class="btn" type="submit"></button>
+                <select class="form-select" aria-label="Select country">
+                  <option selected>New York, USA</option>
+                  <option value="1">Los Angeles, USA</option>
+                  <option value="2">Chicago, USA</option>
+                  <option value="3">Philadelphia, USA</option>
+                </select>
+
+                <button type="submit" class="btn btn-primary">
+                  <img src="./images/search_icon.svg" alt="search_icon" />
+                </button>
               </div>
-            </div>
-          </form>
-        </article>
-
-        <div class="image_container">
-          <img
-            class="background_circle"
-            src="images/background_circle.svg"
-            alt="background_circle"
-          />
-          <img
-            class="doctor_image"
-            src="images/doctor_image.png"
-            alt="doctor_image"
-          />
-
-          <a class="telephone_icon" href="#"
-            ><img src="images/telephone_icon.svg" alt="telephone_icon"
-          /></a>
-          <a class="messenger_icon" href="#"
-            ><img src="images/messenger_icon.svg" alt="messenger_icon"
-          /></a>
-          <div class="rate_icon">
-            <img src="images/rate_icon.svg" alt="rate_icon" />
+            </form>
           </div>
-          <a class="messenger_green_icon" href="#">
-            <img
-              src="images/messenger_green_icon.svg"
-              alt="messenger_green_icon"
-          /></a>
-          <div class="heart_icon">
-            <img src="images/heart_icon.svg" alt="heart_icon" />
+          <div class="col-6">
+            <div class="image_container" id="background_circle">
+              <img
+                src="./images/background_circle.svg"
+                alt="background_circle"
+              />
+              <div id="doctor_image">
+                <img src="./images/doctor_image.png" alt="doctor_image" />
+              </div>
+
+              <div class="icons" id="telephone_icon">
+                <img src="./images/telephone_icon.svg" alt="telephone_icon" />
+              </div>
+
+              <div class="icons" id="messenger_icon">
+                <img src="./images/messenger_icon.svg" alt="messenger_icon" />
+              </div>
+
+              <div id="rate_icon">
+                <img src="./images/rate_icon.svg" alt="rate_icon" />
+              </div>
+
+              <div class="icons" id="messenger_green_icon">
+                <img
+                  src="./images/messenger_green_icon.svg"
+                  alt="messenger_green_icon"
+                />
+              </div>
+
+              <article class="heart_img_container pt-5" id="heart_icon">
+                <img src="./images/heart_icon.svg" alt="heart_icon" />
+                <h2 class="text-center m-0">2500+</h2>
+                <p class="text-center m-0">Happy Patients</p>
+              </article>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="steps_section">
-      <h2>3 Easy Steps and Get Your Solution</h2>
       <div class="container">
-        <article class="col">
-          <div class="icons" id="search_icon">
-            <img src="images/search_icon2.svg" alt="search_icon2" />
+        <h2 class="mb-5 text-center">3 Easy Steps and Get Your Solution</h2>
+        <div class="row text-center">
+          <div class="col-4">
+            <div class="m-auto steps_icons" id="search_icon">
+              <img src="./images/search_icon2.svg" alt="search_icon" />
+            </div>
+            <h3 class="mb-4">Find best doctor’s</h3>
+            <p>
+              Find your doctor easily with a minimum of effort. We've kept
+              everything organised for you.
+            </p>
           </div>
-          <h3>Find best doctor’s</h3>
-          <p>
-            Find your doctor easily with a minimum of effort. We've kept
-            everything organised for you.
-          </p>
-        </article>
+          <div class="col-4">
+            <div class="m-auto steps_icons" id="calendar_icon">
+              <img src="./images/calendar_icon.svg" alt="calendar_icon" />
+            </div>
+            <h3 class="mb-4">Get Appointment</h3>
+            <p>
+              Ask for an appointment of the doctor quickly with almost a single
+              click. We take care of the rest.
+            </p>
+          </div>
+          <div class="col-4">
+            <div class="m-auto steps_icons" id="mobile_app_icon">
+              <img src="./images/mobile_app_icon.svg" alt="mobile_app" />
+            </div>
+            <h3 class="mb-4">Happy Consultations</h3>
+            <p>
+              Do consultations and take the service based on your appointment.
+              Get back to good health
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <article class="col">
-          <div class="icons" id="calendar_icon">
-            <img src="images/calendar_icon.svg" alt="calendar_icon" />
+    <section class="best_quality_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <img
+              class="w-100"
+              src="./images/dr_khalid_abbed.svg"
+              alt="doctor_image"
+            />
           </div>
-          <h3>Get Appointment</h3>
-          <p>
-            Ask for an appointment of the doctor quickly with almost a single
-            click. We take care of the rest.
-          </p>
-        </article>
 
-        <article class="col">
-          <div class="icons" id="mobile_app_icon">
-            <img src="images/mobile_app_icon.svg" alt="mobile_app_icon" />
+          <div class="col-5 offset-1 align-self-center">
+            <h2 class="mb-4">
+              Best quality service with our experience doctors
+            </h2>
+            <p>
+              With our top doctors, we are able to provide best medical services
+              above average We have highly experienced doctors, so don't worry
+              They are also very talented in their fields
+            </p>
+
+            <div class="row mb-3 checkmark_item">
+              <div id="checkmark_icon" class="p-0 me-3">
+                <img src="./images/checkmark.svg" alt="checkmark_icon" />
+              </div>
+              <p class="p-0 m-0">
+                Search your specialist & Online consultations anywhere
+              </p>
+            </div>
+            <div class="row mb-3 checkmark_item">
+              <div id="checkmark_icon" class="p-0 me-3">
+                <img src="./images/checkmark.svg" alt="checkmark_icon" />
+              </div>
+              <p class="p-0 m-0">Consultation our top specialists</p>
+            </div>
+            <div class="row mb-4 checkmark_item">
+              <div id="checkmark_icon" class="p-0 me-3">
+                <img src="./images/checkmark.svg" alt="checkmark_icon" />
+              </div>
+              <p class="p-0 m-0">Doctors are available 24/7</p>
+            </div>
+
+            <a class="btn btn-primary" href="#">Explore specialists</a>
           </div>
-          <h3>Happy Consultations</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="our_specialists_section">
+      <div class="container">
+        <div class="text-center title">
+          <h2 class="m-4">Our Service</h2>
           <p>
-            Do consultations and take the service based on your appointment. Get
-            back to good health
+            Our doctors have high qualified skills and are guaranteed <br />to
+            help you recover from your disease.
           </p>
-        </article>
+        </div>
+
+        <div class="row">
+          <div class="text-center col-4 specialists_card align-self-center">
+            <div class="specialists_icons m-auto">
+              <img src="./images/cardiology_icon.svg" alt="cardiology_icon" />
+            </div>
+            <h3 class="m-4">Cardiology</h3>
+            <p>
+              Our cardiologists are skilled at the diagnosing and treating
+              diseases of the cardiovascular system.
+            </p>
+          </div>
+          <div class="text-center col-4 specialists_card align-self-center">
+            <div class="specialists_icons m-auto">
+              <img src="./images/pulmonology_icon.svg" alt="pulmonology_icon" />
+            </div>
+            <h3 class="m-4">Pulmonology</h3>
+            <p>
+              Our Pulmonologist are skilled at diagnosing treating diseases of
+              the Pulmonology system.
+            </p>
+          </div>
+          <div
+            class="text-center col-4 active specialists_card align-self-center"
+          >
+            <div class="specialists_icons m-auto">
+              <img src="./images/medicine_icon.svg" alt="medicine_icon" />
+            </div>
+            <h3 class="m-4">Medicine</h3>
+            <p>
+              Our medcine doctor are skilled at diagnosing treating diseases of
+              the latest medicne system.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
