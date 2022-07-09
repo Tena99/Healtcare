@@ -536,3 +536,92 @@ header .navbar-expand-lg .navbar-nav .nav-link {
 .underline {
   display: none;
 }
+
+.certified_doctors_section {
+  padding-top: 121px;
+  padding-bottom: 125px;
+}
+.certified_doctors_section article h2 {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.02em;
+  color: #3d3d3f;
+}
+.certified_doctors_section article p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgba(61, 61, 63, 0.7);
+  margin-bottom: 69px;
+}
+.certified_doctors_section .btn.btn-primary {
+  margin-top: 50px;
+  background: #40a3f8;
+  border-color: #40a3f8;
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.certified_doctors_section .card {
+  padding-top: 12px;
+  border-color: #eeeff1;
+  border-radius: 10px;
+}
+
+.card-img-top {
+  border-radius: 10px;
+}
+
+.icons_container {
+  max-width: 114px;
+}
+
+.facebook_icon {
+  background: #4d77cf;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding-top: 8px;
+}
+.facebook_icon img {
+  width: 8px;
+  height: 14px;
+  display: block;
+  margin: auto;
+}
+
+.twitter_icon {
+  background: #1da1f2;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding-top: 8px;
+}
+.twitter_icon img {
+  width: 18px;
+  height: 14px;
+  display: block;
+  margin: auto;
+}
+
+.linkedin_icon {
+  background: #0077b5;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding-top: 6px;
+}
+.linkedin_icon img {
+  height: 16px;
+  width: 16px;
+  display: block;
+  margin: auto;
+}
