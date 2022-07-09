@@ -1,5 +1,7 @@
 @import url(../css/bootstrap.css);
 @import url(../css/bootstrap.min.css);
+@import url(../css/owl.carousel.css);
+@import url(../css/owl.theme.default.css);
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins-Medium.eot");
@@ -472,8 +474,65 @@ header .navbar-expand-lg .navbar-nav .nav-link {
 .our_specialists_section .specialists_card {
   background: rgba(254, 254, 254, 0.51);
   padding-top: 61px;
+  padding-bottom: 31px;
+  border-radius: 10px;
+  max-width: 349px;
 }
 .our_specialists_section .specialists_icons {
   width: 108px;
   height: 75px;
+}
+
+#cardiology_icon {
+  height: 72px;
+  width: 108px;
+}
+
+#pulmonology_icon {
+  height: 77px;
+  width: 77px;
+}
+
+#medicine_icon {
+  height: 78px;
+  width: 74px;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 92px;
+}
+.owl-dots span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(185, 185, 185);
+  text-align: center;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.owl-dots .owl-dot.active span {
+  background-color: #40a3f8;
+  width: 60px;
+  transition: 0.3s;
+}
+
+.owl-item.active.center {
+  background-color: white;
+  border-radius: 10px;
+}
+.owl-item.active.center .underline {
+  display: block;
+  width: 352px;
+  height: 18px;
+  background-color: #40a3f8;
+  border-radius: 0px 0px 10px 10px;
+  opacity: 0.5;
+  position: relative;
+  top: 31px;
+}
+
+.underline {
+  display: none;
 }

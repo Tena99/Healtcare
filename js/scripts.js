@@ -47,3 +47,26 @@ $("#heart_icon").hide(100, function () {
 setTimeout(function () {
   $("#heart_icon").addClass("magictime twisterInDown");
 }, 3000);
+
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 120,
+    autoplay: false,
+    autoplayTimeout: 3000,
+    nav: false,
+    navText: ["", " "],
+    dotsSpeed: 500,
+    center: true,
+
+    responsive: {
+      0: {
+        items: 2,
+      },
+
+      1000: {
+        items: 3,
+      },
+    },
+  });
+});
