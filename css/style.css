@@ -587,8 +587,8 @@ header .navbar-expand-lg .navbar-nav .nav-link {
 
 .facebook_icon {
   background: #4d77cf;
-  height: 30px;
-  width: 30px;
+  height: 32px;
+  width: 32px;
   border-radius: 50%;
   padding-top: 8px;
 }
@@ -601,8 +601,8 @@ header .navbar-expand-lg .navbar-nav .nav-link {
 
 .twitter_icon {
   background: #1da1f2;
-  height: 30px;
-  width: 30px;
+  height: 32px;
+  width: 32px;
   border-radius: 50%;
   padding-top: 8px;
 }
@@ -615,8 +615,8 @@ header .navbar-expand-lg .navbar-nav .nav-link {
 
 .linkedin_icon {
   background: #0077b5;
-  height: 30px;
-  width: 30px;
+  height: 32px;
+  width: 32px;
   border-radius: 50%;
   padding-top: 6px;
 }
@@ -758,4 +758,152 @@ header .navbar-expand-lg .navbar-nav .nav-link {
   border-radius: 50%;
   max-width: 60px;
   overflow: hidden;
+}
+
+.change_life_section {
+  background: #e5e5e5;
+  padding-top: 96px;
+  padding-bottom: 123px;
+}
+.change_life_section .background {
+  background-color: #40a3f8;
+  background-image: url(../images/lines.svg);
+  background-size: cover;
+  padding-top: 82px;
+  padding-bottom: 92px;
+}
+.change_life_section h2 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-left: 118px;
+}
+.change_life_section .col-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  align-self: center;
+  position: relative;
+}
+.change_life_section .btn.btn-light {
+  background: #ffffff;
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #40a3f8;
+  --bs-btn-padding-x: 17px;
+  --bs-btn-padding-y: 16px;
+  margin-left: 118px;
+}
+.change_life_section .btn.btn-light:hover {
+  background-color: #e0dbdb;
+  border-color: #e0dbdb;
+}
+.change_life_section .doctor_last {
+  position: absolute;
+  top: -269px;
+}
+
+footer {
+  padding-top: 34px;
+}
+footer .logo {
+  margin-bottom: 12px;
+}
+footer p {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  color: #646464;
+}
+footer .icons_container {
+  max-width: 320px;
+  justify-content: start;
+}
+footer .facebook_icon,
+footer .twitter_icon,
+footer .linkedin_icon,
+footer .youtube_icon {
+  background-color: #504e4e;
+}
+footer .youtube_icon {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  padding-top: 4px;
+  padding-left: 7px;
+  padding-right: 6px;
+  padding-bottom: 6px;
+}
+footer .youtube_icon a i {
+  color: white;
+  height: 12px;
+  width: 17px;
+}
+footer ul li {
+  list-style: none;
+  margin-bottom: 16px;
+}
+footer ul li a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #646464;
+  text-decoration: none;
+}
+footer ul li:first-of-type a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #323232;
+}
+footer h3 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #323232;
+  padding-top: 5px;
+  margin-bottom: 16px;
+}
+footer .btn.btn-primary {
+  --bs-btn-bg: #40a3f8;
+  --bs-btn-border-color: #40a3f8;
+  --bs-btn-padding-x: 121px;
+  --bs-btn-padding-y: 12px;
+}
+footer hr {
+  border: none;
+  background-color: #969696;
+  color: #969696;
+  height: 1px;
+}
+footer .background {
+  background: #e5e5e5;
+  padding-bottom: 30px;
+}
+footer ol li {
+  list-style: none;
+}
+footer ol li a {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #646464;
+  text-decoration: none;
 }
