@@ -49,7 +49,7 @@ setTimeout(function () {
 }, 3000);
 
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
+  $(".owl-one").owlCarousel({
     loop: true,
     margin: 120,
     autoplay: true,
@@ -62,6 +62,28 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 2,
+      },
+
+      1000: {
+        items: 3,
+      },
+    },
+  });
+});
+
+$(document).ready(function () {
+  $(".owl-two").owlCarousel({
+    loop: true,
+    margin: 75,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    nav: true,
+    dots: false,
+    navText: ["", " "],
+
+    responsive: {
+      0: {
+        items: 1,
       },
 
       1000: {

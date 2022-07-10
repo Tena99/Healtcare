@@ -646,3 +646,116 @@ header .navbar-expand-lg .navbar-nav .nav-link {
   letter-spacing: 0.02em;
   color: rgba(61, 61, 63, 0.7);
 }
+.mobile_app_section a {
+  text-decoration: none;
+}
+
+.clients_review_section {
+  background: #e5e5e5;
+  padding-top: 120px;
+  padding-bottom: 95px;
+}
+.clients_review_section h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.02em;
+  color: #3d3d3f;
+  margin-bottom: 92px;
+}
+.clients_review_section .owl-stage-outer {
+  overflow: initial;
+  overflow-x: clip;
+}
+.clients_review_section .owl-carousel .owl-nav button.owl-prev {
+  background-color: #9ad0ff;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  padding: 7px 11px !important;
+  height: 32px;
+  position: absolute;
+  top: 165px;
+  left: -70px;
+}
+.clients_review_section .owl-carousel .owl-nav button.owl-prev:before {
+  content: "";
+  display: inline-block;
+  background-image: url(../images/left_arrow_icon.svg);
+  background-size: cover;
+  height: 17px;
+  width: 10px;
+}
+.clients_review_section .owl-carousel .owl-nav button.owl-next {
+  background-color: #40a3f8;
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding: 7px 11px !important;
+  height: 32px;
+  position: absolute;
+  top: 165px;
+  right: -80px;
+}
+.clients_review_section .owl-carousel .owl-nav button.owl-next:before {
+  content: "";
+  display: inline-block;
+  background-image: url(../images/right_arrow_icon.svg);
+  background-size: cover;
+  height: 17px;
+  width: 10px;
+}
+.clients_review_section .client_card {
+  background: linear-gradient(132.1deg, rgba(255, 255, 255, 0.88) 0.65%, #fafafa 103.13%);
+  padding-top: 24px;
+  padding-left: 48px;
+  padding-right: 19px;
+  padding-bottom: 32px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
+  max-width: 370px;
+  min-height: 353px;
+  position: relative;
+}
+.clients_review_section p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #454d5d;
+}
+.clients_review_section article h2 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #3d3d3f;
+}
+.clients_review_section article p {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #47c2ff;
+}
+.clients_review_section article .stars_icon {
+  width: 70px;
+  height: 13px;
+  position: absolute;
+  top: 110px;
+  left: 260px;
+}
+.clients_review_section .quote_icon {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: -15px;
+  left: 290px;
+}
+
+.client_photo {
+  border-radius: 50%;
+  max-width: 60px;
+  overflow: hidden;
+}
