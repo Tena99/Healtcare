@@ -165,6 +165,11 @@ header {
   padding-top: 146px;
   padding-bottom: 112px;
 
+  @include max-screen(1024px) {
+    padding-top: 110px;
+    padding-bottom: 70px;
+  }
+
   h1 {
     font-family: "Roboto";
     font-weight: 700;
@@ -172,6 +177,18 @@ header {
     line-height: 70px;
     color: #3e3e3e;
     margin-bottom: 31px;
+
+    @include max-screen(1024px) {
+      font-size: 42px;
+      line-height: 60px;
+      margin-bottom: 25px;
+    }
+
+    @include max-screen(820px) {
+      font-size: 32px;
+      line-height: 45px;
+      margin-bottom: 20px;
+    }
 
     span {
       color: #40a3f8;
@@ -184,6 +201,26 @@ header {
     line-height: 30px;
     color: rgba(117, 117, 117, 0.46);
     margin-bottom: 51px;
+
+    @include max-screen(1024px) {
+      margin-bottom: 45px;
+    }
+
+    @include max-screen(820px) {
+      margin-bottom: 25px;
+      line-height: 25px;
+    }
+  }
+
+  .find_doctor_form {
+    background-color: white;
+    padding: 13px;
+    max-width: 566px;
+    border-radius: 8px;
+
+    @include max-screen(820px) {
+      max-width: 330px;
+    }
   }
 
   .form-control {
@@ -195,13 +232,25 @@ header {
     color: rgba(0, 0, 0, 0.3);
     background: rgba(245, 246, 250, 0.52);
     border: none;
-  }
 
-  .find_doctor_form {
-    background-color: white;
-    padding: 13px;
-    max-width: 566px;
-    border-radius: 8px;
+    @include max-screen(1300px) {
+      max-width: 195px;
+    }
+
+    @include max-screen(1200px) {
+      max-width: 180px;
+    }
+
+    @include max-screen(1024px) {
+      font-size: 12px;
+      line-height: 20px;
+      max-height: 70px;
+    }
+
+    @include max-screen(820px) {
+      max-width: 300px;
+      margin-bottom: 10px;
+    }
   }
 
   .form-select {
@@ -213,6 +262,25 @@ header {
     color: #3d3d3f;
     background: rgba(245, 246, 250, 0.52);
     border: none;
+
+    @include max-screen(1300px) {
+      max-width: 180px;
+    }
+
+    @include max-screen(1200px) {
+      max-width: 165px;
+    }
+
+    @include max-screen(1024px) {
+      font-size: 12px;
+      line-height: 20px;
+      max-height: 70px;
+    }
+
+    @include max-screen(820px) {
+      max-width: 300px;
+      margin-bottom: 10px;
+    }
   }
 
   .btn-primary {
@@ -224,6 +292,24 @@ header {
 
     img {
       width: 36px;
+
+      @include max-screen(1024px) {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    @include max-screen(1024px) {
+      height: 40px;
+      width: 50px;
+      --bs-btn-padding-x: 0;
+      --bs-btn-padding-y: 0;
+    }
+
+    @include max-screen(820px) {
+      margin: auto;
+      padding-left: 135px;
+      padding-right: 165px;
     }
   }
 }
@@ -232,6 +318,30 @@ header {
   position: relative;
   top: 43px;
   left: 55px;
+
+  @include max-screen(1300px) {
+    top: 5px;
+  }
+
+  @include max-screen(1200px) {
+    max-width: 400px;
+    top: -5px;
+  }
+
+  @include max-screen(1024px) {
+    max-width: 355px;
+    top: -37px;
+  }
+
+  @include max-screen(992px) {
+    max-width: 350px;
+    top: -32px;
+  }
+
+  @include max-screen(820px) {
+    max-width: 270px;
+    top: -5px;
+  }
 
   .icons {
     position: relative;
@@ -242,6 +352,16 @@ header {
     border-radius: 35px;
     box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
     padding: 8px;
+
+    @include max-screen(1300px) {
+      height: 60px;
+      width: 60px;
+    }
+
+    @include max-screen(820px) {
+      height: 50px;
+      width: 50px;
+    }
   }
 
   #background_circle {
@@ -252,6 +372,21 @@ header {
     position: absolute;
     top: 5px;
     left: 30px;
+
+    @include max-screen(1400px) {
+      max-width: 475px;
+    }
+
+    @include max-screen(1300px) {
+      max-width: 455px;
+      top: 10px;
+      left: 10px;
+    }
+
+    @include max-screen(1200px) {
+      max-width: 440px;
+      top: 15px;
+    }
   }
 
   #telephone_icon {
@@ -259,9 +394,32 @@ header {
     top: 60px;
     left: 35px;
 
+    @include max-screen(1300px) {
+      left: 30px;
+    }
+
+    @include max-screen(1200px) {
+      left: 0px;
+    }
+
+    @include max-screen(820px) {
+      left: -5px;
+      top: 30px;
+    }
+
     img {
       height: 55px;
       width: 55px;
+
+      @include max-screen(1300px) {
+        height: 45px;
+        width: 45px;
+      }
+
+      @include max-screen(820px) {
+        height: 35px;
+        width: 35px;
+      }
     }
   }
 
@@ -270,9 +428,31 @@ header {
     top: 280px;
     left: -35px;
 
-    img {
-      height: 55px;
-      width: 55px;
+    @include max-screen(1300px) {
+      left: -25px;
+
+      @include max-screen(1200px) {
+        top: 225px;
+      }
+
+      @include max-screen(820px) {
+        top: 150px;
+      }
+
+      img {
+        height: 55px;
+        width: 55px;
+
+        @include max-screen(1300px) {
+          height: 45px;
+          width: 45px;
+        }
+
+        @include max-screen(820px) {
+          height: 35px;
+          width: 35px;
+        }
+      }
     }
   }
 
@@ -281,9 +461,26 @@ header {
     bottom: -10px;
     left: -55px;
 
+    @include max-screen(1300px) {
+      bottom: -75px;
+    }
+
+    @include max-screen(820px) {
+      bottom: -105px;
+    }
+
     img {
       height: 110px;
       width: 257px;
+
+      @include max-screen(1200px) {
+        height: 90px;
+      }
+
+      @include max-screen(820px) {
+        height: 70px;
+        bottom: -110px;
+      }
     }
   }
 
@@ -292,9 +489,36 @@ header {
     top: 60px;
     right: 85px;
 
+    @include max-screen(1400px) {
+      right: 40px;
+    }
+
+    @include max-screen(1300px) {
+      right: 25px;
+    }
+
+    @include max-screen(1200px) {
+      right: 0px;
+    }
+
+    @include max-screen(820px) {
+      right: -5px;
+      top: 30px;
+    }
+
     img {
       height: 55px;
       width: 55px;
+
+      @include max-screen(1300px) {
+        height: 45px;
+        width: 45px;
+      }
+
+      @include max-screen(820px) {
+        height: 35px;
+        width: 35px;
+      }
     }
   }
 
@@ -304,6 +528,29 @@ header {
     width: 162px;
     background-color: white;
     border-radius: 11px;
+    padding-top: 48px;
+
+    @include max-screen(1400px) {
+      height: 110px;
+      width: 150px;
+    }
+
+    @include max-screen(1300px) {
+      height: 100px;
+      width: 140px;
+    }
+
+    @include max-screen(1024px) {
+      padding-top: 42px;
+      height: 90px;
+      width: 120px;
+    }
+
+    @include max-screen(820px) {
+      padding-top: 15px;
+      height: 65px;
+      width: 105px;
+    }
 
     h2 {
       font-family: "Poppins";
@@ -312,6 +559,16 @@ header {
       line-height: 36px;
       letter-spacing: 0.02em;
       color: #3d3d3f;
+
+      @include max-screen(1300px) {
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      @include max-screen(1024px) {
+        font-size: 16px;
+        line-height: 20px;
+      }
     }
 
     p {
@@ -321,18 +578,66 @@ header {
       line-height: 21px;
       letter-spacing: 0.02em;
       color: rgba(61, 61, 63, 0.56);
+
+      @include max-screen(1024px) {
+        font-size: 12px;
+      }
     }
   }
 
   #heart_icon {
     bottom: 105px;
     right: 30px;
+
+    @include max-screen(1300px) {
+      right: -40px;
+    }
+
+    @include max-screen(1400px) {
+      right: -35px;
+      bottom: 40px;
+    }
+
+    @include max-screen(1200px) {
+      right: -70px;
+      bottom: 15px;
+    }
+
+    @include max-screen(820px) {
+      padding-top: 15px;
+      height: 65px;
+      width: 105px;
+      right: -55px;
+    }
+
+    @include max-screen(768px) {
+      right: -40px;
+    }
+
     img {
       position: absolute;
       height: 44px;
       width: 46px;
       top: 5px;
       left: 55px;
+
+      @include max-screen(1400px) {
+        left: 50px;
+      }
+
+      @include max-screen(1300px) {
+        left: 45px;
+      }
+
+      @include max-screen(1024px) {
+        height: 32px;
+        width: 36px;
+        left: 40px;
+      }
+
+      @include max-screen(820px) {
+        display: none;
+      }
     }
   }
 }
@@ -440,6 +745,10 @@ header {
     font-size: 42px;
     line-height: 70px;
     color: #3e3e3e;
+
+    @include max-screen(428px) {
+      font-size: 36px;
+    }
   }
 
   h3 {
@@ -457,6 +766,10 @@ header {
     font-size: 12px;
     line-height: 20px;
     color: rgba(0, 0, 0, 0.5);
+
+    @include max-screen(428px) {
+      font-size: 14px;
+    }
   }
 
   .steps_icons {
@@ -513,6 +826,15 @@ header {
     line-height: 49px;
     letter-spacing: 0.02em;
     color: #3d3d3f;
+
+    @include max-screen(1200px) {
+      font-size: 36px;
+    }
+
+    @include max-screen(1024px) {
+      font-size: 24px;
+      line-height: 39px;
+    }
   }
 
   p {
@@ -523,6 +845,15 @@ header {
     letter-spacing: 0.02em;
     color: rgba(61, 61, 63, 0.7);
     max-width: 506px;
+
+    @include max-screen(1200px) {
+      font-size: 16px;
+    }
+
+    @include max-screen(820px) {
+      font-size: 14px;
+      line-height: 25px;
+    }
   }
 
   .checkmark_item {
@@ -533,6 +864,23 @@ header {
       line-height: 30px;
       letter-spacing: 0.02em;
       color: #3d3d3f;
+
+      @include max-screen(1200px) {
+        max-width: 435px;
+      }
+
+      @include max-screen(1024px) {
+        max-width: 340px;
+      }
+
+      @include max-screen(820px) {
+        font-size: 14px;
+        max-width: 260px;
+      }
+
+      @include max-screen(320px) {
+        max-width: 250px;
+      }
     }
   }
 
@@ -642,13 +990,19 @@ header {
   }
 }
 
+.owl-item {
+  // width: 349px !important;
+  // @include max-screen(540px) {
+  // }
+}
+
 .owl-item.active.center {
   background-color: white;
   border-radius: 10px;
 
   .underline {
     display: block;
-    width: 352px;
+    width: 100%;
     height: 18px;
     background-color: #40a3f8;
     border-radius: 0px 0px 10px 10px;
@@ -677,6 +1031,15 @@ header {
       line-height: 49px;
       letter-spacing: 0.02em;
       color: #3d3d3f;
+
+      @include max-screen(428px) {
+        font-size: 36px;
+      }
+
+      @include max-screen(320px) {
+        font-size: 22px;
+        line-height: 32px;
+      }
     }
 
     p {
@@ -688,6 +1051,14 @@ header {
       letter-spacing: 0.02em;
       color: rgba(61, 61, 63, 0.7);
       margin-bottom: 69px;
+
+      @include max-screen(428px) {
+        font-size: 16px;
+      }
+
+      @include max-screen(320px) {
+        line-height: 24px;
+      }
     }
   }
 
@@ -707,11 +1078,20 @@ header {
     padding-top: 12px;
     border-color: #eeeff1;
     border-radius: 10px;
+    margin-bottom: 20px;
   }
 }
 
 .card-img-top {
   border-radius: 10px;
+}
+
+.card_row {
+  justify-content: space-between;
+
+  @include max-screen(428px) {
+    justify-content: center;
+  }
 }
 
 .icons_container {
@@ -775,6 +1155,11 @@ header {
     line-height: 60px;
     letter-spacing: 0.02em;
     color: #3d3d3f;
+
+    @include max-screen(768px) {
+      font-size: 28px;
+      line-height: 46px;
+    }
   }
 
   p {
@@ -784,10 +1169,20 @@ header {
     line-height: 30px;
     letter-spacing: 0.02em;
     color: rgba(61, 61, 63, 0.7);
+
+    @include max-screen(768px) {
+      font-size: 16px;
+    }
   }
 
   a {
     text-decoration: none;
+  }
+
+  .mobile_app_icon {
+    img {
+      max-width: 125px;
+    }
   }
 }
 
@@ -832,6 +1227,17 @@ header {
       height: 17px;
       width: 10px;
     }
+    @include max-screen(1024px) {
+      left: -30px;
+    }
+
+    @include max-screen(992px) {
+      left: 20px;
+    }
+
+    @include max-screen(428px) {
+      display: none;
+    }
   }
 
   .owl-carousel .owl-nav button.owl-next {
@@ -852,6 +1258,17 @@ header {
       height: 17px;
       width: 10px;
     }
+    @include max-screen(1024px) {
+      right: -45px;
+    }
+
+    @include max-screen(992px) {
+      right: -5px;
+    }
+
+    @include max-screen(428px) {
+      display: none;
+    }
   }
 
   .client_card {
@@ -869,6 +1286,19 @@ header {
     max-width: 370px;
     min-height: 353px;
     position: relative;
+
+    @include max-screen(1024px) {
+      min-height: 453px;
+    }
+
+    @include max-screen(992px) {
+      margin: auto;
+      min-height: 360px;
+    }
+
+    @include max-screen(360px) {
+      max-width: 260px;
+    }
   }
 
   p {
@@ -887,6 +1317,10 @@ header {
       font-size: 20px;
       line-height: 30px;
       color: #3d3d3f;
+
+      @include max-screen(1024px) {
+        text-align: center;
+      }
     }
 
     p {
@@ -895,6 +1329,10 @@ header {
       font-size: 14px;
       line-height: 25px;
       color: #47c2ff;
+
+      @include max-screen(1024px) {
+        text-align: center;
+      }
     }
 
     .stars_icon {
@@ -903,6 +1341,19 @@ header {
       position: absolute;
       top: 110px;
       left: 260px;
+
+      @include max-screen(1024px) {
+        top: 90px;
+        left: 110px;
+      }
+
+      @include max-screen(992px) {
+        left: 165px;
+      }
+
+      @include max-screen(360px) {
+        left: 105px;
+      }
     }
   }
 
@@ -912,6 +1363,18 @@ header {
     position: absolute;
     top: -15px;
     left: 290px;
+
+    @include max-screen(1024px) {
+      left: 200px;
+    }
+
+    @include max-screen(992px) {
+      left: 295px;
+    }
+
+    @include max-screen(360px) {
+      left: 200px;
+    }
   }
 }
 
@@ -969,7 +1432,7 @@ header {
 
     &:hover {
       background-color: #e0dbdb;
-      border-color:#e0dbdb;
+      border-color: #e0dbdb;
     }
   }
 
@@ -1068,6 +1531,10 @@ footer {
     --bs-btn-border-color: #40a3f8;
     --bs-btn-padding-x: 121px;
     --bs-btn-padding-y: 12px;
+
+    @include max-screen(1024px) {
+      --bs-btn-padding-x: 78px;
+    }
   }
 
   hr {

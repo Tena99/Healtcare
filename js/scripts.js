@@ -51,7 +51,6 @@ setTimeout(function () {
 $(document).ready(function () {
   $(".owl-one").owlCarousel({
     loop: true,
-    margin: 120,
     autoplay: true,
     autoplayTimeout: 3000,
     nav: false,
@@ -62,10 +61,12 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 2,
+        margin: 0,
       },
 
       1000: {
         items: 3,
+        margin: 125,
       },
     },
   });
@@ -75,7 +76,7 @@ $(document).ready(function () {
   $(".owl-two").owlCarousel({
     loop: true,
     margin: 75,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 3000,
     nav: true,
     dots: false,
@@ -84,6 +85,16 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 1,
+      },
+
+      820: {
+        items: 1,
+        margin: 0,
+      },
+
+      992: {
+        items: 2,
+        margin: 0,
       },
 
       1000: {
