@@ -1412,6 +1412,10 @@ header {
     text-transform: capitalize;
     color: #ffffff;
     margin-left: 118px;
+
+    @include max-screen(820px) {
+      font-size: 36px;
+    }
   }
 
   .col-6 {
@@ -1442,8 +1446,31 @@ header {
   }
 
   .doctor_last {
-    position: absolute;
-    top: -269px;
+    position: relative;
+    top: -205px;
+
+
+    @include max-screen(1300px) {
+      top: -139px;
+    }
+
+    @include max-screen(1200px) {
+      top: -137px;
+    }
+
+    @include max-screen(1024px) {
+      top: -70px;
+    }
+
+    @include max-screen(820px) {
+      top: -15px;
+    }
+
+    img {
+      position: absolute;
+    }
+
+
   }
 }
 
