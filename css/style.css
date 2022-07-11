@@ -1391,6 +1391,11 @@ header .navbar-expand-lg .navbar-nav .nav-link {
     top: -15px;
   }
 }
+@media screen and (max-width: 768px) {
+  .change_life_section .doctor_last {
+    display: none;
+  }
+}
 .change_life_section .doctor_last img {
   position: absolute;
 }
